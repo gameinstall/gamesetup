@@ -1,1 +1,29 @@
+<<<<<<< HEAD
+echo "- Install Gamecredits from github —"
+echo " ---------------------------------- "
+read -p "Press enter to continue"
+echo "- Please wait ... —"
+
+apt-get update && apt-get upgrade
+apt-get install ntp git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev autoconf automake pkg-config unzip
+
+git clone https://github.com/gamecredits-project/GameCredits
+
+echo "- Gamecredits fork ready to install ... —"
+read -p "Press enter to continue"
+
+cd GameCredits
+wget -c https://raw.githubusercontent.com/gamers-coin/gamecredits/master/bdb48.sh
+chmod 0777 bdb48.sh
+./autogen.sh
+./bdb48.sh
+make
+make install
+cd src
+strip gamecreditsd
+
+
+=======
 echo "test2"
+echo "test3"
+>>>>>>> 1ecf8cb56b3f8d7d148fb9ee2ea871d09e766409
