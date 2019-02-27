@@ -26,4 +26,7 @@ strip gamecreditsd
 =======
 echo "test2"
 echo "test3"
+<<<<<<< HEAD
+>>>>>>> 1ecf8cb56b3f8d7d148fb9ee2ea871d09e766409
+=======
 >>>>>>> 1ecf8cb56b3f8d7d148fb9ee2ea871d09e766409
